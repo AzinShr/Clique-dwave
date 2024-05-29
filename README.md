@@ -2,8 +2,8 @@ This code aims to find the largest clique in a random graph using a D-Wave quant
 
 First we need to define the Hamiltonian:
 $ H = H_A + H_B + H_C   $
-$$H_A = A \left( 1- \sum_{i=2}^{N}y_i )^2 \right A \left(\sum{i=2}^{N}ny_n- \sum{v}^{}x_v)^2 \right $$
-$$H_B = B \left[ \frac{1}{2} \left( \sum{i=2}^{N}ny_n \right) \left(-1+\sum{i=2}^{N}ny_n) \right - \sum{(uv)}^{} x_v x_u \right]$$
+$$H_A = A \left( 1- \sum_{i=2}^N y_i )^2 \right A \left(\sum{i=2}^N ny_n- \sum{v} x_v)^2 \right $$
+$$H_B = B \left[ \frac{1}{2} \left( \sum{i=2}^N ny_n \right) \left(-1+\sum{i=2}^N ny_n) \right - \sum{(uv)} x_v x_u \right]$$
 $$H_C = -C\sum{v}^{x_v}$$
 1. **Importing necessary libraries**:
     - `dimod`: For defining and manipulating binary quadratic models (BQMs).
