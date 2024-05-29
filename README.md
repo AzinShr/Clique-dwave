@@ -1,11 +1,11 @@
 This code aims to find the largest clique in a random graph using a D-Wave quantum computer. Here's an explanation of each step:
 
 First we need to define the Hamiltonian:
-'''math
+$$
  H = H_A + H_B + H_C   
 H_A = A \left( 1- \sum_{i=2}^N y_i \right)^2 + A \left(\sum{i=2}^N ny_n- \sum{v}^ x_v \right)^2 
 H_B = B \left[ \frac{1}{2} \left( \sum_{i=2}^N ny_n \right) \left(-1+\sum{i=2}^N ny_n \right) - \sum_{(uv)} x_v x_u \right]
-H_C = -C\sum_{v}^{x_v} '''
+H_C = -C\sum_{v}^{x_v} $$
 1. **Importing necessary libraries**:
     - `dimod`: For defining and manipulating binary quadratic models (BQMs).
     - `DWaveSampler` and `EmbeddingComposite` from `dwave.system`: For using D-Wave's quantum annealer.
