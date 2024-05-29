@@ -1,6 +1,6 @@
 This code aims to find the largest clique in a random graph using a D-Wave quantum computer. Here's an explanation of each step:
 
-First we need to define the Hamiltonian:
+First, we need to define the Hamiltonian:
 
 $$ H = H_A + H_B + H_C $$  
 
