@@ -4,7 +4,7 @@ First, we need to define the Hamiltonian:
 
 $$ H = H_A + H_B + H_C $$  
 
-$$ H_A = A \left( 1- \sum_{i=2}^N y_i \right)^2 + A \left(\sum{i=2}^N ny_n- \sum{v} x_v \right)^2$$ 
+$$ H_A = A \left( 1- \sum_{i=2}^N y_i \right)^2 + A \left(\sum{i=2}^N ny_n- \sum{v}^{} x_v \right)^2$$ 
 
 $$ H_B = B \left[ \frac{1}{2} \left( \sum_{i=2}^N ny_n \right) \left(-1+\sum{i=2}^N ny_n \right) - \sum_{uv} x_v x_u \right] $$
 
