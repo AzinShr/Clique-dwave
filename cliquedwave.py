@@ -68,16 +68,16 @@ print(response)
 
 # Decode the result to find the cliques
 samples = response.first.sample
-clique = [v for v in range(N) if samples[f'x_{v}'] == 1]
+clique = [v for v in range(N) if samples[f'x_{v}'] == 1] #extracts the nodes that form the largest clique in this first sample.
 
 print(f"Largest clique found: {clique}")
 print(f"Size of the largest clique: {len(clique)}")
 
 # Determine the number of cliques of the same size found
 num_cliques = 0
-for sample in response.data(['sample']):
+for sample in response.data(['sample']): # iterates through each sample in the response.
     temp_clique = [v for v in range(N) if sample.sample[f'x_{v}'] == 1]
-    if len(temp_clique) == len(clique):
-        num_cliques += 1
+    if len(temp_clique) == len(clique):  #extracts the nodes that form a clique for the current sample.
+        num_cliques += 1 
 
 print(f"Number of cliques of the same size: {num_cliques}")
