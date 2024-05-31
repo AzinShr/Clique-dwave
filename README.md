@@ -28,14 +28,14 @@ $$ H_C = -C\sum_{v} x_v $$
     - `h`: Dictionary for linear coefficients.
     - `J`: Dictionary for quadratic coefficients.
 
-5. **Computing the coefficients for Hamiltonian **  $H_A$ :
+5. Computing the coefficients for Hamiltonian   $H_A$ :
     - For each `y_i` variable (where \( 2 \leq i \leq N \)):
         - Setting linear coefficients: `h[f'y_{i}']`.
         - Setting quadratic coefficients between `y_i` and `y_j`: `J[(f'y_{i}', f'y_{j}')]`.
     - Setting linear coefficients for `x_v` variables: `h[f'x_{v}']`.
     - Setting quadratic coefficients between `y_i` and `x_v`: `J[(f'y_{i}', f'x_{v}')]`.
 
-6. **Computing the coefficients for Hamiltonian ** $H_B$ :
+6. Computing the coefficients for Hamiltonian  $H_B$ :
     - Adjusting linear coefficients for `y_i`: `h[f'y_{i}']`.
     - Adjusting quadratic coefficients between `y_i` and `y_j`: `J[(f'y_{i}', f'y_{j}')]`.
     - Adjusting linear coefficients for `x_v`: `h[f'x_{v}']`.
