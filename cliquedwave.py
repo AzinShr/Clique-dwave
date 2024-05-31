@@ -4,12 +4,11 @@ import dimod
 from dwave.system import DWaveSampler, EmbeddingComposite
 import networkx as nx
 
-# Define the constants based on the conditions
-# Let delta be the maximum degree of the graph
-delta = 3  # Example value, replace with the actual maximum degree of the graph
+# Define constants based on the given conditions
+delta = 3  # Maximum degree of the graph, example value
 B = 1.0  # Example constant
 A = (delta + 2) * B
-C = B
+C = B  # Ensure that C < A - nB
 
 N = 5  # Number of nodes in the graph
 p = 0.5 #probability of edge creation
