@@ -6,8 +6,8 @@ import networkx as nx
 
 # Define the constants based on the conditions
 # Let delta be the maximum degree of the graph
-delta = 3  # Example value, replace with the actual maximum degree of your graph
-B = 1.0  # Example constant, can be tuned based on your problem
+delta = 3  # Example value, replace with the actual maximum degree of the graph
+B = 1.0  # Example constant
 A = (delta + 2) * B
 C = B
 
